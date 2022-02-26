@@ -6,7 +6,6 @@ import connectDB from "./config/db.js";
 import productRoutes from "./routes/productRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
-import res from "express/lib/response.js";
 
 dotenv.config();
 

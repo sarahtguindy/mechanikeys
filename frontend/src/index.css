@@ -2,6 +2,14 @@ main {
   min-height: 80vh;
 }
 
+.brand {
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 0px;
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+}
+
 h1 {
   font-size: 1.8rem;
   padding: 1rem 0;

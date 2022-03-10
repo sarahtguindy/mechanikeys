@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Row, Col } from "react-bootstrap";
 import Product from "../components/Product";
@@ -7,7 +7,8 @@ import Message from "../components/Message";
 import Loader from "../components/Loader";
 import Paginate from "../components/Paginate";
 import { listProducts } from "../actions/productActions";
-import ProductCarousel from "../components/ProductCarousel";
+// import ProductCarousel from "../components/ProductCarousel";
+// import ProductJumbotron from "../components/ProductJumbotron";
 import Meta from "../components/Meta";
 
 const HomeScreen = ({ match }) => {
@@ -25,15 +26,16 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
-      <Meta title="Welcome To ProShop | Home" />
+      <Meta title="Welcome To MechaniKeys | Home" />
 
-      {!keyword ? (
-        <ProductCarousel />
+      {/* {!keyword ? (
+        // <ProductCarousel />
+        <ProductJumbotron />
       ) : (
         <Link to="/" className="btn btn-light">
           Go Back
         </Link>
-      )}
+      )} */}
 
       <h1>Latest Products</h1>
       {loading ? (

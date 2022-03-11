@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   min-height: 80vh;
 }
@@ -82,4 +86,14 @@ Jumbotron
 
 .jumbotron p {
   align-self: start;
+}
+
+/* 
+-----
+Card
+-----
+*/
+.card-title {
+  height: 2.6rem;
+  margin-bottom: 3rem;
 }

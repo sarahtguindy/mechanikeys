@@ -1,4 +1,4 @@
-# mechanikeys
+# MechaniKeys
 > An eCommerce platform built with React, Redux, Express &amp; MongoDB.
 > MechaniKeys is a fictitious brand/company I've created for the purpose of adding a conceptual theme to this project.
 > This company is mechanical keyboard vendor. Get it? Mechnical... Keyboards... MechaniKeys!

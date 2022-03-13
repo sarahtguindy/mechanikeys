@@ -76,30 +76,10 @@ const ProductScreen = ({ history, match }) => {
           <Meta title={product.name} />
 
           <Row>
-            <Col md={6}>
+            <Col md={5}>
               <Image src={product.image} alt={product.name} fluid />
-            </Col>
 
-            <Col md={3}>
-              <ListGroup variant="flush">
-                <ListGroup.Item>
-                  <h3>{product.name}</h3>
-                </ListGroup.Item>
-                <ListGroup.Item>
-                  <Rating
-                    value={product.rating}
-                    text={`${product.numReviews} reviews`}
-                  />
-                </ListGroup.Item>
-                <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
-                <ListGroup.Item>
-                  Description: {product.description}
-                </ListGroup.Item>
-              </ListGroup>
-            </Col>
-
-            <Col md={3}>
-              <Card>
+              <Card className="mt-4">
                 <ListGroup variant="flush">
                   <ListGroup.Item>
                     <Row>
@@ -154,18 +134,13 @@ const ProductScreen = ({ history, match }) => {
                   </ListGroup.Item>
                 </ListGroup>
               </Card>
-            </Col>
-          </Row>
 
-          <Row>
-            <Col md={6}>
-              <h2>Reviews</h2>
+              <h2 className="mt-4">Reviews</h2>
               {product.reviews.length === 0 && (
                 <Message variant="danger">
                   No reviews for this product yet.
                 </Message>
               )}
-
               <ListGroup variant="flush">
                 {product.reviews.map((review) => (
                   <ListGroup.Item key={review._id}>
@@ -178,7 +153,7 @@ const ProductScreen = ({ history, match }) => {
                   </ListGroup.Item>
                 ))}
                 <ListGroup.Item>
-                  <h4>Write a Review</h4>
+                  <h4 className="p-2">Write a Review</h4>
                   {errorProductReview && (
                     <Message variant="danger">{errorProductReview}</Message>
                   )}
@@ -209,7 +184,6 @@ const ProductScreen = ({ history, match }) => {
                           onChange={(e) => setComment(e.target.value)}
                         ></Form.Control>
                       </Form.Group>
-
                       <Button type="submit" variant="primary">
                         Submit
                       </Button>
@@ -219,6 +193,24 @@ const ProductScreen = ({ history, match }) => {
                       Please <Link to="/login">sign in</Link> to write a review.
                     </Message>
                   )}
+                </ListGroup.Item>
+              </ListGroup>
+            </Col>
+
+            <Col md={7}>
+              <ListGroup variant="flush">
+                <ListGroup.Item>
+                  <h3>{product.name}</h3>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <Rating
+                    value={product.rating}
+                    text={`${product.numReviews} reviews`}
+                  />
+                </ListGroup.Item>
+                <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
+                <ListGroup.Item>
+                  Description: {product.description}
                 </ListGroup.Item>
               </ListGroup>
             </Col>

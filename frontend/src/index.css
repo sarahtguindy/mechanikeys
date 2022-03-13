@@ -97,3 +97,10 @@ Card
   height: 2.6rem;
   margin-bottom: 3rem;
 }
+
+@media (max-width: 767.98px) {
+  .search-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

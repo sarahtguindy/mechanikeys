@@ -1,5 +1,5 @@
 # MechaniKeys
-> An eCommerce platform built with React, Redux, Express &amp; MongoDB.
+> An eCommerce platform built with React, Redux, Express, MongoDB, and React Bootstrap.
 > MechaniKeys is a fictitious brand/company I've created for the purpose of adding a conceptual theme to this project.
 > This company is mechanical keyboard vendor. Get it? Mechnical... Keyboards... MechaniKeys!
 * Fully functional features such as a shopping cart, admin management, a product review system, and pagination.

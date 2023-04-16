@@ -7,4 +7,4 @@
 * Logging in development mode using Morgan and more.
 
 ## Demo
-<a href="https://mechanikeys.herokuapp.com/" target="_blank">Click here for a live demo!</a>
+<a href="https://mechanikeys-mern.onrender.com/" target="_blank">Click here for a live demo!</a>

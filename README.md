@@ -8,3 +8,5 @@
 
 ## Demo
 <a href="https://mechanikeys-mern.onrender.com/" target="_blank">Click here for a live demo!</a>
+
+**NOTE: This site is hosted on render.com, and may take a while to load as if it has been unaccessed for a long period of time, it will need to redeploy**
